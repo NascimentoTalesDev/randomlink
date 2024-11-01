@@ -7,7 +7,7 @@ export async function middleware(request: NextRequest) {
   if(!death){
     const urls = await getUrls()
     const randomUrl = urls[Math.floor(Math.random() * urls.length)]
-    return NextResponse.redirect(new URL(`https://wa.me/${randomUrl}?text=Opa%20bom%20dia%201`, request.url))
+    return NextResponse.redirect(new URL(`https://wa.me/${randomUrl}?text=Opa%20gostaria%20de%20fazer%20um%20teste`, request.url))
   }
 }
 
